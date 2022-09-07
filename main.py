@@ -10,7 +10,7 @@ admins = ["Your Chat ID -> int", 1920911015]
 
 # Your bot's token
 key = "5364216031:AGXEuot4tJrjt_9x2KxkhPDF9eN9cuhaYM"
-
+key = "5364216031:AAG4ZlxS4X9V602qvhH-RncAvFsGaXUp6ik"
 
 # Logging what's happening
 logging.basicConfig(
