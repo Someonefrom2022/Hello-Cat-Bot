@@ -18,7 +18,7 @@ logging.basicConfig(
     level=logging.INFO)
 
 
-async def start_commmand(update:Update, context: CallbackContext.DEFAULT_TYPE) -> None:
+async def start_commmand(update:Update, context) -> None:
 	msg = "Hello there!\nThis is the start command."
 	await update.effective_message.reply_text(msg)
 
@@ -61,7 +61,7 @@ def can_message(chatid) -> bool:
 
 
 # Your function that you want to limit for normal users
-async def cute_cats(update:Update, context:CallbackContext.DEFAULT_TYPE) -> None:
+async def cute_cats(update:Update, context) -> None:
 	chatid = update.effective_user.id
 	
 	if can_message(chatid):
