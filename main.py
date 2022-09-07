@@ -78,9 +78,9 @@ def main():
     app = ApplicationBuilder().token(key).build()
     
     # Command Handlers...
-    start_h = CommandHandler("start", start_commmand)
+    start_h = CommandHandler("start", start_commmand, block=False)
     
-    cat_h = CommandHandler("cat", cute_cats)
+    cat_h = CommandHandler("cat", cute_cats, block=False)
     app.add_handler(start_h)
     app.add_handler(cat_h)
     app.run_polling()
