@@ -1,7 +1,7 @@
 from telegram import Bot, Update
 from telegram.ext import MessageHandler, CommandHandler, CallbackContext, ApplicationBuilder
 import logging, time , requests, flask, threading
-
+from multiprocessing import Process as pp
 
 # You can add multiple chatids in the admins list to escape from getting the message limit
 
@@ -96,5 +96,5 @@ def keep_alive():t = threading.Thread(target = run);t.start()
 
 
 if __name__ == "__main__":
-	keep_alive()
-	main()
+	#keep_alive()
+	pp(target=main).start()
