@@ -1,5 +1,5 @@
-from telegram import Bot, Update
-from telegram.ext import MessageHandler, CommandHandler, CallbackContext, ApplicationBuilder
+from telegram import *
+from telegram.ext import *
 import logging, time , requests, flask, threading
 from multiprocessing import Process as pp
 
