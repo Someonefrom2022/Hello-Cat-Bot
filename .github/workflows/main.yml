@@ -42,7 +42,9 @@ jobs:
       run: |
         python main.py
 
+jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -56,11 +58,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Second
+    - name: Alhamdulillah 
       run: |
         python main.py
-
-
-
-
-
